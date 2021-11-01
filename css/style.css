@@ -11,7 +11,7 @@ html{
     display: flex;
     justify-content: space-between;
     font-size: clamp(1.4rem, 1.1791rem + 1.1779vw, 2rem);
-    margin: -30px 0;
+    margin: -35px 0;
     padding: 0;
 }
 
@@ -54,15 +54,15 @@ html{
 }
 
 #player-side > div{
-    border: 2px solid blue;
-    color: blue;
+    border: 2px solid white;
+    color: white;
     width: 100%;
     padding: 10px;
 }
 
-.player-selected::before{
-    color: white;
-    background-color: blue;
+#player-side > div:hover{
+    border: 2px solid blue;
+    color: blue;
 }
 
 #computer-side > div{
@@ -78,6 +78,11 @@ html{
     margin-left: 29px;
     margin-right: 5px;
     border: 2px solid white;
+    padding: 5px;
+}
+
+.jumbo-text{
+    font-size: clamp(1.4rem, 1.1791rem + 1.1779vw, 2rem);
 }
 
 .icon{
@@ -104,7 +109,7 @@ html{
     margin-right: auto;
 }
 
-button{
+#game-buttons > button{
     border: none;
     font-family: 'VT323', monospace;
     font-size: clamp(1.4rem, 1.1791rem + 1.1779vw, 2rem);

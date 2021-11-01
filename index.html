@@ -21,33 +21,35 @@
     <div id="game-container">
         <div id="ui">
             <div id="player-side">
-                <div id="player-scissor" class="player-selected">
-                    <div class="icon"><img src="img/playscissor.png" alt="Scissor"></div>
+                <div id="player-scissor">
+                    <div class="icon"><img src="img/playscissor.png" onmouseover="this.src='img/playscissor-select.png'" onmouseout="this.src='img/playscissor.png'" alt="Scissor"></div>
                     <div class="desc"><span>Scissor</span></div>
                 </div>
                 <div id="player-paper">
-                    <div class="icon"><img src="img/playpaper.png" alt="Paper"></div>
+                    <div class="icon"><img src="img/playpaper.png" onmouseover="this.src='img/playpaper-select.png'" onmouseout="this.src='img/playpaper.png'"alt="Paper"></div>
                     <div class="desc"><span>Paper</span></div>
                 </div>
                 <div id="player-rock">
-                    <div class="icon"><img src="img/playrock.png" alt="Rock"></div>
+                    <div class="icon"><img src="img/playrock.png" onmouseover="this.src='img/playrock-select.png'" onmouseout="this.src='img/playrock.png'" alt="Rock"></div>
                     <div class="desc"><span>Rock</span></div>
                 </div>
             </div>
 
-            <div id="jumbotron"></div>
+            <div id="jumbotron">
+                <p id = "jumbo-text" class="jumbo-text">Press Start to Play</p>
+            </div>
 
             <div id="computer-side">
                 <div id="compute/r-scissor">
-                    <div class="icon"><img src="img/compscissor.png"></div>
+                    <div class="icon"><img src="img/compscissor-select.png"></div>
                     <div class="desc"><span>Scissor</span></div>
                 </div>
                 <div id="computer-paper">
-                    <div class="icon"><img src="img/comppaper.png"></div>
+                    <div class="icon"><img src="img/comppaper-select.png"></div>
                     <div class="desc"><span>Paper</span></div>
                 </div>
                 <div id="computer-rock">
-                    <div class="icon"><img src="img/comprock.png"></div>
+                    <div class="icon"><img src="img/comprock-select.png"></div>
                     <div class="desc"><span>Rock</span></div>
                 </div>
             </div>
