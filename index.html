@@ -3,11 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script type="text/javascript" src="js/jokenpo.js"></script>
+    <script type="text/javascript" src="js/jokenpo.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jo Ken Po</title>
 </head>
 <body>
+
+    <div id="score-container">
+        <p id="player-score">Player = 0</p>
+        <p id="scoreboard">SCORE</p>
+        <p id="computer-score">Computer = 0</p>
+    </div>
+
+    <div id="title"><h1>JO KEN PO</h1></div>
+
+    <div id="game-container">
+        <div id="ui">
+            <div id="player-side">
+                <div id="player-scissor" class="player-selected">
+                    <div class="icon"><img src="img/playscissor.png" alt="Scissor"></div>
+                    <div class="desc"><span>Scissor</span></div>
+                </div>
+                <div id="player-paper">
+                    <div class="icon"><img src="img/playpaper.png" alt="Paper"></div>
+                    <div class="desc"><span>Paper</span></div>
+                </div>
+                <div id="player-rock">
+                    <div class="icon"><img src="img/playrock.png" alt="Rock"></div>
+                    <div class="desc"><span>Rock</span></div>
+                </div>
+            </div>
+
+            <div id="jumbotron"></div>
+
+            <div id="computer-side">
+                <div id="compute/r-scissor">
+                    <div class="icon"><img src="img/compscissor.png"></div>
+                    <div class="desc"><span>Scissor</span></div>
+                </div>
+                <div id="computer-paper">
+                    <div class="icon"><img src="img/comppaper.png"></div>
+                    <div class="desc"><span>Paper</span></div>
+                </div>
+                <div id="computer-rock">
+                    <div class="icon"><img src="img/comprock.png"></div>
+                    <div class="desc"><span>Rock</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-buttons">
+        <button id= "start-button" type = "button">Start</button>
+        <button id= "about-button" type="button">About</button>
+    </div>
+
     
 </body>
 </html>

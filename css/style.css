@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html{
+    font-family: 'VT323', monospace;
+    margin: 0 10px;
+    background-color: black;
+    color: white;
+}
+
+#score-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(1.4rem, 1.1791rem + 1.1779vw, 2rem);
+    margin: -30px 0;
+    padding: 0;
+}
+
+#player-score{
+    color:blue;
+}
+
+#computer-score{
+    color:red;
+}
+
+#title h1{
+    font-size: clamp(3rem, 2.2638rem + 3.9264vw, 5rem);
+    text-align: center;
+    margin: 0;
+    font-weight: normal;
+}
+
+#ui{
+    height: 60%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#player-side,
+#jumbotron,
+#computer-side{
+    height: 100%;
+    text-align: center;
+}
+
+#player-side,
+#computer-side{
+    flex: 2 1 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#player-side > div{
+    border: 2px solid blue;
+    color: blue;
+    width: 100%;
+    padding: 10px;
+}
+
+.player-selected::before{
+    color: white;
+    background-color: blue;
+}
+
+#computer-side > div{
+    border: 2px solid red;
+    color: red;
+    width: 100%;
+    padding: 10px;
+}
+
+#jumbotron{
+    flex: 1 2 80%;
+    height: auto;
+    margin-left: 29px;
+    margin-right: 5px;
+    border: 2px solid white;
+}
+
+.icon{
+    width: 100%;
+}
+
+
+.icon img{
+    width: 100%;
+    height: auto;
+}
+
+#game-buttons{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+#start-button{
+    margin-left: auto;
+}
+
+#about-button{
+    margin-right: auto;
+}
+
+button{
+    border: none;
+    font-family: 'VT323', monospace;
+    font-size: clamp(1.4rem, 1.1791rem + 1.1779vw, 2rem);
+    padding: 10px;
+}
+
+@media (max-width: 780px){
+    #ui{
+        width: 85%;
+    }
+}
